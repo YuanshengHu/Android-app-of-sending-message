@@ -1,0 +1,55 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.javahomework"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+        android:name=".enterfaceactivity"
+        android:launchMode="singleTask"
+        android:label="短信助手" >
+        <intent-filter >
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        
+    </activity>
+    
+    <activity android:name=".SecondActivity"
+        android:launchMode="singleTask">
+        
+    </activity>
+    <activity android:name="sendactivity"
+        android:launchMode="singleTask">
+        
+    </activity>
+    <activity android:name="checksent"
+        android:launchMode="singleTask">
+        
+    </activity>
+    <activity android:name="alreadydelete"
+        android:launchMode="singleTask">
+        
+    </activity>
+    <activity android:name="thedraft"
+        android:launchMode="singleTask">
+        
+    </activity>
+    <activity android:name="mailwithstar"
+        android:launchMode="singleTask">
+        
+    </activity>
+    <service android:name=".sendservice" >
+        
+    </service>
+    </application>
+</manifest>
